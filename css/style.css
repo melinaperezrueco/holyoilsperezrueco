@@ -1,0 +1,410 @@
+/*TITULO*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header";
+    background-image: url(../Images/background.png);
+    color: rgb(221, 165, 44);
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    width: 100vw;
+}
+
+h1 {
+    width: 100vw;
+}
+
+.logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.classNav {
+    background-color: rgb(221, 165, 44);
+    width: 100vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+    height: 5vw;
+}
+
+.imgIndex {
+    width: 100vw;
+}
+
+.imgInstitucional {
+    width: 100vw;
+    background-color: rgb(221, 165, 44);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    grid-area: "imagen institucional";
+}
+
+/* Page Index*/
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen institucional";
+    width: 100vw;
+    flex-direction: column;
+}
+
+.tituloDes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 50px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.pHero {
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+}
+
+/* Page Productos*/
+
+.productGrids {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "jabon" "rosa" "naranjo"
+        "micelar" "manteca" "balsamo";
+    height: 1500px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.jabonPr {
+    display: flex;
+    grid-area: "jabon";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.rosaPr {
+    display: flex;
+    grid-area: "rosa";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    font: 5px;
+}
+
+.naranjoPr {
+    display: flex;
+    grid-area: "naranjo";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.micelarPr {
+    display: flex;
+    grid-area: "micelar";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.mantecaPr {
+    display: flex;
+    grid-area: "manteca";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.balsamoPr {
+    display: flex;
+    grid-area: "balsamo";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.tituloProduct {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: left;
+    text-align-last: center;
+    font-family: "Lato", sans-serif;
+    margin: 10px 10px;
+}
+
+.imgPr {
+    margin: 20px 20px;
+}
+/* Page Promociones*/
+
+.promoGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "promo1" "promo2";
+    height: 1000px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.promo1 {
+    grid-area: "promo1";
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.promo2 {
+    grid-area: "promo2";
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Page Ingredientes */
+
+.ingredGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "Aceites es" "Aceite de coco"
+    "Manteca de karité" "Aceite de almendras";
+    height: 1500px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.aceiteEs {
+    display: flex;
+    grid-area: "Aceites es";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.aceiteCoc {
+    display: flex;
+    grid-area: "Aceite de coco";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.mantecaK {
+    display: flex;
+    grid-area: "Manteca de karité";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.aceiteA {
+        display: flex;
+    grid-area: "Aceite de almendras";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+/*Formulario contacto*/
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "contacto";
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+
+
+.contactoForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    grid-area: "contacto";
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/*Footer*/
+footer {
+    background-image: linear-gradient(to left, rgb(133, 89, 7), rgb(222, 150, 42));
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+/** MEDIAS QUERIES **/
+
+/*INDEX*/
+
+/* Media Querie max 600px */
+
+@media screen and (max-width: 600px) {
+    
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen institucional";
+    width: 100vw;
+}
+}
+
+
+/*PRODUCTOS*/
+
+/* Media Querie max 600px */
+
+@media screen and (max-width: 600px) {
+.productGrids {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "jabon"
+    "rosa"
+    "naranjo"
+    "micelar"
+    "manteca"
+    "balsamo";
+    height: 9000px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+}
+
+/* PROMOCIONES */
+
+/* Media Querie max 600px */
+
+@media screen and (max-width: 600px) {
+.promoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "promo1"
+    "promo2";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    height: 3000px;
+    width: 100vw;
+}
+
+}
+
+/* INGREDIENTES*/
+
+/* Media Querie max 600px */
+
+@media screen and (max-width: 600px) {
+.ingredGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "Aceites es"
+    "Aceite de coco"
+    "Manteca de karité"
+    "Aceite de almendras";
+    height: 4000px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;}
+}
+

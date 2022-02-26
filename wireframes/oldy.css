@@ -1,0 +1,87 @@
+
+    /*NAV*/
+    nav {
+        background-color: rgb(221, 165, 44);
+        font-family: 'Poppins', sans-serif;
+        width: 100%vw;
+        height: 30px;
+        border-style: solid;
+    }
+
+
+    ul li {
+        position: sticky;
+        top: 150px;
+        list-style: none;
+        background-color: rgb(221, 165, 44);
+        margin-left: 120 px;
+        margin-right: 120px;
+        padding: 25px;
+        display: inline-block;
+        text-align: center;
+        
+
+    }
+    
+    /*General Main*/
+    main {
+        background-color:white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /*main index*/
+    #institucional {
+
+        width: 100%;
+        background-color:rgb(221, 165, 44) ;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        height: 100%vw;
+
+    }
+
+    /*Titulos generales*/
+    .tituloGeneral {
+
+        margin-top: 50px;
+        margin-bottom: 70px;
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        background-color: white;
+        font-weight: bolder;
+        font-size: 50px;
+    }
+
+    /*Secciones de páginas*/
+    .sectionmain {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+
+    /*Párrafos*/
+    p {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        font-weight: bold;
+        text-align: left;
+
+
+    }
+    /*Titulos internos de seccion*/
+    .titulos{
+        font-weight: bold;
+        font-size: x-large;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        
+    }
+
+    /*Formulario contacto*/
+
+    .contactoForm {
+        text-align: center;
+        width: 80%vw;
+        
