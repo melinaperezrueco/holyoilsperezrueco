@@ -13,13 +13,14 @@ header {
     background-image: url(../Images/background.png);
     color: rgb(221, 165, 44);
     font-size: 30px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
     width: 100vw;
 }
 
 h1 {
     width: 100vw;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .logoSection {
@@ -45,10 +46,16 @@ ul {
     align-items: center;
     font-size: 2vw;
     height: 5vw;
+    font-family: 'Roboto', sans-serif;
 }
 
 .imgIndex {
     width: 100vw;
+    filter: grayscale(1);
+}
+
+.imgIndex:hover{
+    filter: grayscale(0);
 }
 
 .imgInstitucional {
@@ -86,7 +93,7 @@ h2 {
 }
 
 .pHero {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: justify;
 }
 
@@ -115,7 +122,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .rosaPr {
@@ -125,7 +132,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     font: 5px;
 }
 
@@ -136,7 +143,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .micelarPr {
@@ -146,7 +153,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .mantecaPr {
@@ -156,7 +163,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .balsamoPr {
@@ -166,7 +173,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .tituloProduct {
@@ -205,7 +212,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 .promo2 {
@@ -215,7 +222,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
 /* Page Ingredientes */
@@ -243,7 +250,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
 }
 
@@ -254,7 +261,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
 }
 
@@ -265,7 +272,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
 }
 
@@ -276,7 +283,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     text-align: center;
 }
 
@@ -290,7 +297,7 @@ h2 {
     width: 100vw;
     flex-direction: column;
     margin-top: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
     
 }
 
@@ -303,16 +310,19 @@ h2 {
     margin-bottom: 20px;
     grid-area: "contacto";
     width: 100vw;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Serif Display', serif;
 }
 
+.boton {
+    font-family: 'Noto Serif Display', serif;
+}
 
 /*Footer*/
 footer {
     background-image: linear-gradient(to left, rgb(133, 89, 7), rgb(222, 150, 42));
     text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: bolder;
 }
@@ -325,86 +335,86 @@ footer {
 
 @media screen and (max-width: 600px) {
     
-main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "imagen institucional";
-    width: 100vw;
-}
-}
-
-
-/*PRODUCTOS*/
-
-/* Media Querie max 600px */
-
-@media screen and (max-width: 600px) {
-.productGrids {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "jabon"
-    "rosa"
-    "naranjo"
-    "micelar"
-    "manteca"
-    "balsamo";
-    height: 9000px;
-    width: 100vw;
-    justify-content: center;
-    align-content: space-around;
-    justify-items: center;
-    column-gap: 20px;
-    row-gap: 40px;
-}
-
-}
-
-/* PROMOCIONES */
-
-/* Media Querie max 600px */
-
-@media screen and (max-width: 600px) {
-.promoGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "promo1"
-    "promo2";
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    column-gap: 20px;
-    row-gap: 40px;
-    height: 3000px;
-    width: 100vw;
-}
-
-}
-
-/* INGREDIENTES*/
-
-/* Media Querie max 600px */
-
-@media screen and (max-width: 600px) {
-.ingredGrid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "Aceites es"
-    "Aceite de coco"
-    "Manteca de karité"
-    "Aceite de almendras";
-    height: 4000px;
-    width: 100vw;
-    justify-content: center;
-    align-content: space-evenly;
-    justify-items: center;
-    column-gap: 20px;
-    row-gap: 40px;}
-}
-
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "imagen institucional";
+        width: 100vw;
+    }
+    
+    
+    
+    /*PRODUCTOS*/
+    
+    
+    
+    
+    
+    .productGrids {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "jabon"
+        "rosa"
+        "naranjo"
+        "micelar"
+        "manteca"
+        "balsamo";
+        height: 9000px;
+        width: 100vw;
+        justify-content: center;
+        align-content: space-around;
+        justify-items: center;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    
+    
+    
+    /* PROMOCIONES */
+    
+    
+    
+    
+    .promoGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "promo1"
+        "promo2";
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        column-gap: 20px;
+        row-gap: 40px;
+        height: 3000px;
+        width: 100vw;
+    }
+    
+    
+    
+    /* INGREDIENTES*/
+    
+    
+    
+    
+    .ingredGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "Aceites es"
+        "Aceite de coco"
+        "Manteca de karité"
+        "Aceite de almendras";
+        height: 4000px;
+        width: 100vw;
+        justify-content: center;
+        align-content: space-evenly;
+        justify-items: center;
+        column-gap: 20px;
+        row-gap: 40px;}
+    }
