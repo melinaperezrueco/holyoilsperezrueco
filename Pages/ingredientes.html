@@ -8,10 +8,17 @@
     <title>Holy Oils</title>
     <link rel="shortcut icon" href="../Images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+Display:ital,wght@1,300;1,400&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+Display:ital,wght@1,300;1,400&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -20,17 +27,34 @@
     <header>
         <!--Logo y titulo-->
         <a href="../index.html"><img src="../Images/logo.png" alt="logo"></a>
-        <h1 class="animate__animated animate__jackInTheBox" > Cosmética Natural </h1>
+        <h1 class="animate__animated animate__jackInTheBox"> Cosmética Natural </h1>
 
         <!--BARRA DE NAVEGACIÓN-->
-        <nav class="classNav">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li> <a href="./Productos.html">Catálogo de productos</a> </li>
-                <li> <a href="./promociones.html"> Promociones</a> </li>
-                <li> <a href="./ingredientes.html"> Ingredientes</a> </li>
-                <li> <a href="./contacto.html"> Contacto</a> </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Productos.html">Catálogo de
+                                productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ingredientes.html">Ingredientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -43,49 +67,61 @@
             amet laudantium natus sapiente corrupti possimus perspiciatis, nulla dolore quasi illo eos officiis,
             temporibus tenetur provident cupiditate cumque?</p>
     </div>
-
-    <Section class="ingredGrid">
-        <div class="aceiteEs">
-            <h3 class="tituloProduct">Aceites esenciales</h3>
-            <img class="imgPr" src="../Images/aceiteesencial.jpeg" alt="aceite esencial">
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni dolores aliquid aut, nemo corrupti nam
-                quasi rerum atque, delectus beatae voluptas dolorum culpa illum eveniet adipisci laboriosam hic? Ad,
-                fugit?</p>
+    <div class="ingredGrid" >
+        <div class= "card" style="width: 20rem;">
+            <img src="../Images/karite.jpeg" class="card-img-top" alt="Manteca de karité">
+            <div class="card-body">
+                <h5 class="card-title">Manteca de karité</h5>
+                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae voluptas, at
+                    numquam quae ea rem assumenda iure sunt deleniti asperiores voluptates minima quas dolorem optio
+                    alias, eaque veniam eligendi enim.
+                </p>
+            </div>
         </div>
-
-        <div class="aceiteCoc">
-            <h3 class="tituloProduct"> Aceite de coco</h3>
-            <img class="imgPr" src="../Images/aceitecoco.jpeg" alt="aceite de coco">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore ab, vel a laborum minus cupiditate
-                commodi? Officia voluptatibus, corrupti tempore ut facere quos. Maiores alias harum dolore magni esse?
-            </p>
+        <div class="card" style="width: 20rem;">
+            <img src="../Images/almond.jpeg" class="card-img-top" alt="Aceite de almendras">
+            <div class="card-body">
+                <h5 class="card-title">Aceite de almendras</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum laborum modi
+                    repudiandae error inventore aperiam, delectus asperiores rerum ad magni! Eos magni labore pariatur
+                    tenetur atque veritatis placeat vero.</p>
+            </div>
         </div>
-
-        <div class="mantecaK">
-            <h3 class="tituloProduct">Manteca de Karité</h3>
-            <img class="imgPr" src="../Images/karite.jpeg" alt="Karité">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur harum corporis sint neque. Sunt,
-                doloribus quod odit magni voluptatum et rerum fuga laudantium soluta, architecto vitae similique nobis
-                praesentium nesciunt?</p>
+        <div class="card" style="width: 20rem;">
+            <img src="../Images/aceiteesencial.jpeg" class="card-img-top" alt="Aceites esenciales">
+            <div class="card-body">
+                <h5 class="card-title">Aceites esenciales</h5>
+                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nemo aperiam possimus
+                    enim quod ipsa nulla atque sint quos veritatis quia quibusdam quaerat, a officia facere non
+                    deserunt, libero iste.</p>
+            </div>
         </div>
-
-        <div class="aceiteA">
-            <h3 class="tituloProduct"> Aceite de Almendras</h3>
-            <img class="imgPr" src="../Images/almond.jpeg" alt="almendras">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto quidem quia quo neque
-                consectetur? Delectus harum totam, provident sed tenetur laudantium culpa vero porro, omnis corrupti,
-                perspiciatis soluta minus.</p>
+        <div class="card" style="width: 20rem;">
+            <img src="../Images/aceitecoco.jpeg" class="card-img-top" alt="Aceite de coco">
+            <div class="card-body">
+                <h5 class="card-title">Aceite de coco</h5>
+                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatibus,
+                    consectetur aliquid ducimus similique animi officiis vitae at sapiente harum, assumenda eos deleniti
+                    illo modi est! Assumenda atque sapiente delectus.</p>
+            </div>
         </div>
-    </Section>
+    </div>
 
 
 
     <!--PIE DE PAGINA-->
     <footer>
-        <section>Social
-            <div> <img src="../Images/redes.png" alt="redes"></div>
+
+        <section class="sectionmain">Social
+            <div class="redes">
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+            <div class="sectionmain">Holy Oils</div>
+            <div class="sectionmain">Copyright 2022</div>
+
         </section>
-        <div>Holy Oils. Copyright 2022.</div>
     </footer>
 
 

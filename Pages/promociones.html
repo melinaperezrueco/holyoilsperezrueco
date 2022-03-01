@@ -8,10 +8,17 @@
     <title>Holy Oils</title>
     <link rel="shortcut icon" href="../Images/logo.png">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+Display:ital,wght@1,300;1,400&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Serif+Display:ital,wght@1,300;1,400&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -19,18 +26,35 @@
     <header>
         <!--Logo y titulo-->
         <a href="../index.html"><img src="../Images/logo.png" alt="logo"></a>
-        <h1 class="animate__animated animate__jackInTheBox" > Cosmética Natural </h1>
+        <h1 class="animate__animated animate__jackInTheBox"> Cosmética Natural </h1>
 
 
         <!--BARRA DE NAVEGACIÓN-->
-        <nav class="classNav">
-            <ul>
-                <li> <a href="../index.html">Home</a></li>
-                <li> <a href="./Productos.html">Catálogo de productos</a> </li>
-                <li> <a href="./promociones.html"> Promociones</a> </li>
-                <li> <a href="./ingredientes.html"> Ingredientes</a> </li>
-                <li> <a href="./contacto.html"> Contacto</a> </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navBar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Productos.html">Catálogo de
+                                productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ingredientes.html">Ingredientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -44,20 +68,26 @@
     </div>
 
     <section class="promoGrid">
-        <div class="promo1">
-            <h3 class="tituloProduct">Agua de Azhar</h3>
-            <img class="imgPr" src="../Images/aguadeazhar.jpeg" alt="agua de azhar">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam fugiat dolorum nostrum minima.
-                Dignissimos, fugiat. Rerum, vitae. Quis a ipsa repudiandae atque numquam autem exercitationem asperiores
-                totam necessitatibus commodi. Dolore!</p>
+        <div class="card" style="width: 18rem;">
+            <img src="../Images/aguadeazhar.jpeg" class="card-img-top" alt="Agua de azahar">
+            <div class="card-body">
+                <h5 class="card-title">Agua de azahar</h5>
+                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate tempora
+                    quae nostrum ut consequatur et, exercitationem iusto sit praesentium blanditiis voluptatem.
+                    Aperiam, blanditiis nisi molestiae sed repudiandae quibusdam velit eveniet.</p>
+            </div>
         </div>
 
-        <div class="promo2">
-            <h3 class="tituloProduct">Agua de Rosas</h3>
-            <img class="imgPr" src="../Images/aguarosas.jpeg" alt="agua de rosas">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur libero nobis facere sint est unde
-                explicabo quo delectus, porro beatae ab maiores nesciunt, similique voluptatem aliquid enim dignissimos
-                praesentium ad?</p>
+
+        <div class="card" style="width: 18rem;">
+            <img src="../Images/aguarosas.jpeg" class="card-img-top" alt="Agua de rosas">
+            <div class="card-body">
+                <h5 class="card-title">Agua de Rosas</h5>
+                <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates sint
+                    perspiciatis possimus quos. Eligendi qui cupiditate reiciendis nisi doloremque laborum ullam
+                    eius
+                    debitis, maiores magnam commodi quis dolorem voluptatum officiis?</p>
+            </div>
         </div>
     </Section>
 
@@ -65,12 +95,18 @@
 
     <!--PIE DE PAGINA-->
     <footer>
-        <section>Social
-            <div> <img src="../Images/redes.png" alt=""></div>
-        </section>
-        <div>Holy Oils. Copyright 2022.</div>
-    </footer>
 
+        <section class="sectionmain">Social
+            <div class="redes">
+                <i class="bi bi-whatsapp"></i>
+                <i class="bi bi-youtube"></i>
+                <i class="bi bi-instagram"></i>
+            </div>
+            <div class="sectionmain">Holy Oils</div>
+            <div class="sectionmain">Copyright 2022</div>
+
+        </section>
+    </footer>
 </body>
 
 </html>

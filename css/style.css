@@ -1,5 +1,7 @@
 /*TITULO*/
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,14 +15,14 @@ header {
     background-image: url(../Images/background.png);
     color: rgb(221, 165, 44);
     font-size: 30px;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
     text-align: center;
     width: 100vw;
 }
 
 h1 {
     width: 100vw;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 .logoSection {
@@ -29,33 +31,37 @@ h1 {
     align-items: center;
 }
 
-.classNav {
+#navBar {
     background-color: rgb(221, 165, 44);
     width: 100vw;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 nav ul li a {
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.container-fluid {
     justify-content: space-evenly;
     align-items: center;
     font-size: 2vw;
-    height: 5vw;
-    font-family: 'Roboto', sans-serif;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(221, 165, 44);
 }
 
 .imgIndex {
     width: 100vw;
-    filter: grayscale(1);
+    filter: grayscale(0);
 }
 
-.imgIndex:hover{
-    filter: grayscale(0);
+/* Page Index*/
+
+.imgIndex:hover {
+    width: 100vw;
+    filter: grayscale(1);
 }
 
 .imgInstitucional {
@@ -66,7 +72,6 @@ ul {
     grid-area: "imagen institucional";
 }
 
-/* Page Index*/
 main {
     display: grid;
     grid-template-columns: 100%;
@@ -93,8 +98,9 @@ h2 {
 }
 
 .pHero {
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
     text-align: justify;
+    padding-bottom: 20px;
 }
 
 /* Page Productos*/
@@ -104,8 +110,8 @@ h2 {
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-        "jabon" "rosa" "naranjo"
-        "micelar" "manteca" "balsamo";
+    "jabon" "rosa" "naranjo"
+    "micelar" "manteca" "balsamo";
     height: 1500px;
     width: 100vw;
     justify-content: center;
@@ -121,8 +127,9 @@ h2 {
     width: 20vw;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-content: center;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 .rosaPr {
@@ -132,7 +139,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
     font: 5px;
 }
 
@@ -143,7 +150,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 .micelarPr {
@@ -153,7 +160,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 .mantecaPr {
@@ -163,7 +170,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 .balsamoPr {
@@ -173,7 +180,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 .tituloProduct {
@@ -195,7 +202,6 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "promo1" "promo2";
     height: 1000px;
     width: 100vw;
     justify-content: center;
@@ -205,24 +211,19 @@ h2 {
     row-gap: 40px;
 }
 
-.promo1 {
-    grid-area: "promo1";
-    display: flex;
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Noto Serif Display', serif;
+.card {
+    text-align: center;
+    font-family: "Noto Serif Display", serif;
+    height: fit-content;
 }
 
-.promo2 {
-    grid-area: "promo2";
-    display: flex;
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Noto Serif Display', serif;
+.card-title {
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    margin: 20px 20px;
+    padding: 50px;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 /* Page Ingredientes */
@@ -231,10 +232,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "Aceites es" "Aceite de coco"
-    "Manteca de karité" "Aceite de almendras";
-    height: 1500px;
+    height: 2000px;
     width: 100vw;
     justify-content: center;
     align-content: space-evenly;
@@ -243,49 +241,6 @@ h2 {
     row-gap: 40px;
 }
 
-.aceiteEs {
-    display: flex;
-    grid-area: "Aceites es";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Noto Serif Display', serif;
-    text-align: center;
-}
-
-.aceiteCoc {
-    display: flex;
-    grid-area: "Aceite de coco";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Noto Serif Display', serif;
-    text-align: center;
-}
-
-.mantecaK {
-    display: flex;
-    grid-area: "Manteca de karité";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Noto Serif Display', serif;
-    text-align: center;
-}
-
-.aceiteA {
-        display: flex;
-    grid-area: "Aceite de almendras";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: 'Noto Serif Display', serif;
-    text-align: center;
-}
 
 /*Formulario contacto*/
 
@@ -293,128 +248,146 @@ h2 {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
-    grid-template-areas: "contacto";
-    width: 100vw;
+    width: auto;
     flex-direction: column;
     margin-top: 20px;
-    font-family: 'Noto Serif Display', serif;
-    
+    font-family: "Noto Serif Display", serif;
 }
-
-
 
 .contactoForm {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    grid-area: "contacto";
     width: 100vw;
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
+    text-align: center;
 }
 
 .boton {
-    font-family: 'Noto Serif Display', serif;
+    font-family: "Noto Serif Display", serif;
 }
 
 /*Footer*/
 footer {
-    background-image: linear-gradient(to left, rgb(133, 89, 7), rgb(222, 150, 42));
+    background-image: linear-gradient(
+    to left,
+    rgb(133, 89, 7),
+    rgb(222, 150, 42)
+    );
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Lato", sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: bolder;
+}
+
+.redes {
+    padding: 20px, 20px;
+}
+
+.bi-whatsapp {
+    font-size: 30px;
+    color: rgb(152, 237, 25);
+}
+
+.bi-youtube {
+    font-size: 30px;
+    color: red;
+}
+
+.bi-instagram {
+    font-size: 30px;
+    color: rgb(242, 85, 242);
 }
 
 /** MEDIAS QUERIES **/
 
 /*INDEX*/
 
+@media screen and (max-width: 970px) {
+#navBar {
+    background-color: rgb(221, 165, 44);
+    width: 100vw;
+    height: auto;}
+}
+
 /* Media Querie max 600px */
 
 @media screen and (max-width: 600px) {
-    
-    main {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr;
-        grid-template-areas: "imagen institucional";
-        width: 100vw;
-    }
-    
-    
-    
-    /*PRODUCTOS*/
-    
-    
-    
-    
-    
-    .productGrids {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "jabon"
-        "rosa"
-        "naranjo"
-        "micelar"
-        "manteca"
-        "balsamo";
-        height: 9000px;
-        width: 100vw;
-        justify-content: center;
-        align-content: space-around;
-        justify-items: center;
-        column-gap: 20px;
-        row-gap: 40px;
-    }
-    
-    
-    
-    /* PROMOCIONES */
-    
-    
-    
-    
-    .promoGrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas:
-        "promo1"
-        "promo2";
-        justify-content: center;
-        align-content: center;
-        justify-items: center;
-        column-gap: 20px;
-        row-gap: 40px;
-        height: 3000px;
-        width: 100vw;
-    }
-    
-    
-    
-    /* INGREDIENTES*/
-    
-    
-    
-    
-    .ingredGrid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "Aceites es"
-        "Aceite de coco"
-        "Manteca de karité"
-        "Aceite de almendras";
-        height: 4000px;
-        width: 100vw;
-        justify-content: center;
-        align-content: space-evenly;
-        justify-items: center;
-        column-gap: 20px;
-        row-gap: 40px;}
-    }
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen institucional";
+    width: 100vw;
+    color: rgb(221, 165, 44);
+}
+
+#navBar {
+    background-color: rgb(221, 165, 44);
+    height: auto;
+    width: 100vw;
+}
+
+.imgIndex {
+    width: 100vw;
+    filter: grayscale(1);
+}
+
+.imgIndex:hover {
+    filter: grayscale(0);
+}
+
+/*PRODUCTOS*/
+
+.productGrids {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "jabon"
+    "rosa"
+    "naranjo"
+    "micelar"
+    "manteca"
+    "balsamo";
+    height: 9000px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+  /* PROMOCIONES */
+
+.promoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    height: 3000px;
+    width: 100vw;}
+
+/* INGREDIENTES*/
+
+.ingredGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 4000px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 10px, 10px, 10px, 10px;
+}
+}
