@@ -13,7 +13,7 @@ header {
     grid-template-rows: 1fr;
     grid-template-areas: "header";
     background-image: url(../Images/background.png);
-    color: rgb(221, 165, 44);
+    color: rgb(211, 165, 73);
     font-size: 30px;
     font-family: "Noto Serif Display", serif;
     text-align: center;
@@ -32,36 +32,42 @@ h1 {
 }
 
 #navBar {
-    background-color: rgb(221, 165, 44);
+    background-color: rgb(245, 218, 164);
     width: 100vw;
     padding-top: 0;
     padding-bottom: 0;
+    justify-content: space-evenly;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Lato", sans-serif;
 }
+
 
 .container-fluid {
     justify-content: space-evenly;
     align-items: center;
     font-size: 2vw;
     height: auto;
-    font-family: "Roboto", sans-serif;
-    background-color: rgb(221, 165, 44);
+    font-family: "Lato", sans-serif;
+    background-color: rgb(245, 218, 164);
 }
+
+
+
+/* Page Index*/
 
 .imgIndex {
     width: 100vw;
     filter: grayscale(0);
 }
 
-/* Page Index*/
 
 .imgIndex:hover {
     width: 100vw;
     filter: grayscale(1);
+    transition: 5s;
 }
 
 .imgInstitucional {
@@ -196,6 +202,7 @@ h2 {
 .imgPr {
     margin: 20px 20px;
 }
+
 /* Page Promociones*/
 
 .promoGrid {
@@ -268,12 +275,14 @@ h2 {
     font-family: "Noto Serif Display", serif;
 }
 
+
+
 /*Footer*/
 footer {
     background-image: linear-gradient(
     to left,
-    rgb(133, 89, 7),
-    rgb(222, 150, 42)
+    rgb(194, 154, 79),
+    rgb(245, 218, 164)
     );
     text-align: center;
     font-family: "Lato", sans-serif;
