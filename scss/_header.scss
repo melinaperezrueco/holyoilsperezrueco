@@ -1,0 +1,65 @@
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "header";
+    background-image: url(../Images/background.png);
+    color: $colorHeader;
+    font-size: 30px;
+    font-family: $fuentePpal;
+    text-align: center;
+    width: $widthTotal;;
+
+
+
+    & h1 {
+    width: $widthTotal;;
+    font-family: $fuentePpal;
+    }
+
+}  
+
+    .logoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #navBar {
+    width: $widthTotal;;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-evenly;
+    
+    }
+
+    .container-fluid {
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+    height: auto;
+    font-family: $fuenteSecond;;
+    background-color: $colorSecond;
+    }
+
+    nav{
+        ul {
+            text-decoration: none;
+    
+            li {
+
+                a {
+        text-decoration: none;
+        font-family: $fuenteSecond;;
+        }
+        }
+        }
+    }
+
+
+
+
+
+

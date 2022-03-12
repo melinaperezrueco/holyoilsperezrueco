@@ -1,0 +1,78 @@
+
+/*Promociones*/
+
+.promoGrid {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "azahar" "rosa";
+    height: 1500px;
+    width: $widthTotal;;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.naranjo {
+    display: flex;
+    grid-area: "azahar";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: $fuentePpal;
+
+}
+
+
+.rosas {
+    display: flex;
+    grid-area: "rosa";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: $fuentePpal;
+
+
+
+}
+
+
+.card {
+    text-align: center;
+    font-family: $fuentePpal;
+    height: fit-content;
+}
+
+
+.tituloProduct {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: left;
+    text-align-last: center;
+    font-family: $fuenteSecond;;
+    margin: 10px 10px;
+}
+
+
+ /* media queries PROMOCIONES */
+
+@media screen and (max-width: 600px) {
+.promoGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    height: 3000px;
+    width: $widthTotal;;}
+}

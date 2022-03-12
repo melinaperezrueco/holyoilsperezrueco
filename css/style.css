@@ -1,378 +1,210 @@
 /*TITULO*/
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
+/*colores*/
+/* Fuentes*/
+/*Width*/
 header {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "header";
-    background-image: url(../Images/background.png);
-    color: rgb(211, 165, 73);
-    font-size: 30px;
-    font-family: "Noto Serif Display", serif;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header";
+  background-image: url(../Images/background.png);
+  color: #d3a549;
+  font-size: 30px;
+  font-family: "Noto Serif Display", serif;
+  text-align: center;
+  width: 100vw; }
+  header h1 {
     width: 100vw;
-}
-
-h1 {
-    width: 100vw;
-    font-family: "Noto Serif Display", serif;
-}
+    font-family: "Noto Serif Display", serif; }
 
 .logoSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 #navBar {
-    background-color: rgb(245, 218, 164);
-    width: 100vw;
-    padding-top: 0;
-    padding-bottom: 0;
-    justify-content: space-evenly;
-}
-
-nav ul li a {
-    text-decoration: none;
-    font-family: "Lato", sans-serif;
-}
-
+  width: 100vw;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: space-evenly; }
 
 .container-fluid {
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 2vw;
-    height: auto;
-    font-family: "Lato", sans-serif;
-    background-color: rgb(245, 218, 164);
-}
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2vw;
+  height: auto;
+  font-family: "Lato", sans-serif;
+  background-color: #f5daa4; }
 
+nav ul {
+  text-decoration: none; }
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Lato", sans-serif; }
 
-
-/* Page Index*/
-
-.imgIndex {
-    width: 100vw;
-    filter: grayscale(0);
-}
-
-
-.imgIndex:hover {
-    width: 100vw;
-    filter: grayscale(1);
-    transition: 5s;
-}
-
-.imgInstitucional {
-    width: 100vw;
-    background-color: rgb(221, 165, 44);
-    margin-top: 0%;
-    margin-bottom: 0%;
-    grid-area: "imagen institucional";
-}
-
-main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "imagen institucional";
-    width: 100vw;
-    flex-direction: column;
-}
-
-.tituloDes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-h2 {
-    font-family: "Lato", sans-serif;
-    text-align: center;
-    margin: 20px 20px;
-    padding: 50px;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-.pHero {
-    font-family: "Noto Serif Display", serif;
-    text-align: justify;
-    padding-bottom: 20px;
-}
-
-/* Page Productos*/
-
+/*Productos*/
 .productGrids {
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "jabon" "rosa" "naranjo"
-    "micelar" "manteca" "balsamo";
-    height: 1500px;
-    width: 100vw;
-    justify-content: center;
-    align-content: space-around;
-    justify-items: center;
-    column-gap: 20px;
-    row-gap: 40px;
-}
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "jabon" "rosa" "naranjo" "micelar" "manteca" "balsamo";
+  height: 2000px;
+  width: 100vw;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 40px; }
 
 .jabonPr {
-    display: flex;
-    grid-area: "jabon";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    font-family: "Noto Serif Display", serif;
-}
+  display: flex;
+  grid-area: "jabon";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
 
 .rosaPr {
-    display: flex;
-    grid-area: "rosa";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: "Noto Serif Display", serif;
-    font: 5px;
-}
+  display: flex;
+  grid-area: "rosa";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif;
+  font: 5px; }
 
 .naranjoPr {
-    display: flex;
-    grid-area: "naranjo";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: "Noto Serif Display", serif;
-}
+  display: flex;
+  grid-area: "naranjo";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
 
 .micelarPr {
-    display: flex;
-    grid-area: "micelar";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: "Noto Serif Display", serif;
-}
+  display: flex;
+  grid-area: "micelar";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
 
 .mantecaPr {
-    display: flex;
-    grid-area: "manteca";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: "Noto Serif Display", serif;
-}
+  display: flex;
+  grid-area: "manteca";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
 
 .balsamoPr {
-    display: flex;
-    grid-area: "balsamo";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: "Noto Serif Display", serif;
-}
+  display: flex;
+  grid-area: "balsamo";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
 
 .tituloProduct {
-    display: flex;
-    font-weight: bold;
-    flex-direction: column;
-    justify-content: left;
-    text-align-last: center;
-    font-family: "Lato", sans-serif;
-    margin: 10px 10px;
-}
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: left;
+  text-align-last: center;
+  font-family: "Lato", sans-serif;
+  margin: 10px 10px; }
 
-.imgPr {
-    margin: 20px 20px;
-}
+h3 {
+  padding-bottom: 15px; }
 
-/* Page Promociones*/
-
-.promoGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    height: 1000px;
-    width: 100vw;
-    justify-content: center;
-    align-content: space-evenly;
-    justify-items: center;
-    column-gap: 20px;
-    row-gap: 40px;
-}
-
-.card {
-    text-align: center;
-    font-family: "Noto Serif Display", serif;
-    height: fit-content;
-}
-
-.card-title {
-    font-family: "Lato", sans-serif;
-    text-align: center;
-    margin: 20px 20px;
-    padding: 50px;
-    font-weight: bold;
-    font-size: xx-large;
-}
-
-/* Page Ingredientes */
-
-.ingredGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 2000px;
-    width: 100vw;
-    justify-content: center;
-    align-content: space-evenly;
-    justify-items: center;
-    column-gap: 20px;
-    row-gap: 40px;
-}
-
-
-/*Formulario contacto*/
-
-.contactGrid {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    width: auto;
-    flex-direction: column;
-    margin-top: 20px;
-    font-family: "Noto Serif Display", serif;
-}
-
-.contactoForm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 100vw;
-    font-family: "Noto Serif Display", serif;
-    text-align: center;
-}
-
-.boton {
-    font-family: "Noto Serif Display", serif;
-}
-
-
-
-/*Footer*/
-footer {
-    background-image: linear-gradient(
-    to left,
-    rgb(194, 154, 79),
-    rgb(245, 218, 164)
-    );
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bolder;
-}
-
-.redes {
-    padding: 20px, 20px;
-}
-
-.bi-whatsapp {
-    font-size: 30px;
-    color: rgb(152, 237, 25);
-}
-
-.bi-youtube {
-    font-size: 30px;
-    color: red;
-}
-
-.bi-instagram {
-    font-size: 30px;
-    color: rgb(242, 85, 242);
-}
-
-/** MEDIAS QUERIES **/
-
-/*INDEX*/
-
-@media screen and (max-width: 970px) {
-#navBar {
-    background-color: rgb(221, 165, 44);
-    width: 100vw;
-    height: auto;}
-}
-
-/* Media Querie max 600px */
-
+/*MEDIA QUERIES PRODUCTOS*/
 @media screen and (max-width: 600px) {
-main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "imagen institucional";
-    width: 100vw;
-    color: rgb(221, 165, 44);
-}
-
-#navBar {
-    background-color: rgb(221, 165, 44);
-    height: auto;
-    width: 100vw;
-}
-
-.imgIndex {
-    width: 100vw;
-    filter: grayscale(1);
-}
-
-.imgIndex:hover {
-    filter: grayscale(0);
-}
-
-/*PRODUCTOS*/
-
-.productGrids {
+  .productGrids {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "jabon"
-    "rosa"
-    "naranjo"
-    "micelar"
-    "manteca"
-    "balsamo";
-    height: 9000px;
+    grid-template-areas: "jabon" "rosa" "naranjo" "micelar" "manteca" "balsamo";
+    height: 6000px;
     width: 100vw;
     justify-content: center;
     align-content: space-around;
     justify-items: center;
     column-gap: 20px;
-    row-gap: 40px;
-}
+    row-gap: 40px; } }
 
-  /* PROMOCIONES */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .productGrids {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "jabon" "rosa" "naranjo" "micelar" "manteca" "balsamo";
+    height: 2500px;
+    width: 100vw;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px; } }
 
+/*Promociones*/
 .promoGrid {
+  display: grid;
+  grid-template-columns: 1fr  1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "azahar" "rosa";
+  height: 1500px;
+  width: 100vw;
+  justify-content: center;
+  align-content: space-around;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 40px; }
+
+.naranjo {
+  display: flex;
+  grid-area: "azahar";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
+
+.rosas {
+  display: flex;
+  grid-area: "rosa";
+  width: 20vw;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-family: "Noto Serif Display", serif; }
+
+.card {
+  text-align: center;
+  font-family: "Noto Serif Display", serif;
+  height: fit-content; }
+
+.tituloProduct {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: left;
+  text-align-last: center;
+  font-family: "Lato", sans-serif;
+  margin: 10px 10px; }
+
+/* media queries PROMOCIONES */
+@media screen and (max-width: 600px) {
+  .promoGrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -382,11 +214,45 @@ main {
     column-gap: 20px;
     row-gap: 40px;
     height: 3000px;
-    width: 100vw;}
+    width: 100vw; } }
 
-/* INGREDIENTES*/
-
+/* Page Ingredientes */
 .ingredGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "karite" "almond"  "oil"  "coco";
+  height: 2000px;
+  width: 100vw;
+  justify-content: center;
+  align-content: space-evenly;
+  justify-items: center;
+  column-gap: 20px;
+  row-gap: 40px; }
+
+.karite {
+  grid-area: "karite";
+  display: flex;
+  flex-direction: column; }
+
+.almond {
+  grid-area: "almond";
+  display: flex;
+  flex-direction: column; }
+
+.oil {
+  grid-area: "oil";
+  display: flex;
+  flex-direction: column; }
+
+.coco {
+  grid-area: "coco";
+  display: flex;
+  flex-direction: column; }
+
+/* Media queries INGREDIENTES*/
+@media screen and (max-width: 600px) {
+  .ingredGrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -397,6 +263,126 @@ main {
     justify-items: center;
     column-gap: 20px;
     row-gap: 40px;
-    padding: 10px, 10px, 10px, 10px;
-}
-}
+    padding: 10px, 10px, 10px, 10px; } }
+
+/*Footer*/
+footer {
+  background-image: linear-gradient(to left, #c29a4f, #f5daa4);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bolder; }
+
+.redes {
+  padding: 20px, 20px; }
+
+.bi-whatsapp {
+  font-size: 30px;
+  color: #98ed19; }
+
+.bi-youtube {
+  font-size: 30px;
+  color: red; }
+
+.bi-instagram {
+  font-size: 30px;
+  color: #f255f2; }
+
+/*Formulario contacto*/
+.contactGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  width: auto;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: "Noto Serif Display", serif; }
+
+.contactoForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100vw;
+  font-family: "Noto Serif Display", serif;
+  text-align: center; }
+
+.boton {
+  font-family: "Noto Serif Display", serif; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* Page Index*/
+.imgIndex {
+  width: 100vw;
+  filter: grayscale(0); }
+  .imgIndex:hover {
+    width: 100vw;
+    filter: grayscale(1);
+    transition: 5s; }
+
+.imgInstitucional {
+  width: 100vw;
+  background-color: #dda52c;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  grid-area: "imagen institucional"; }
+
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "imagen institucional";
+  width: 100vw;
+  flex-direction: column; }
+
+.tituloDes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+h2 {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  margin: 20px 20px;
+  padding: 50px;
+  font-weight: bold;
+  font-size: xx-large; }
+
+.pHero {
+  font-family: "Noto Serif Display", serif;
+  text-align: justify;
+  padding-bottom: 20px; }
+
+/** MEDIAS QUERIES **/
+/*INDEX*/
+@media screen and (max-width: 970px) {
+  #navBar {
+    background-color: #dda52c;
+    width: 100vw;
+    height: auto; } }
+
+/* Media Querie max 600px */
+@media screen and (max-width: 600px) {
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen institucional";
+    width: 100vw;
+    color: #dda52c; }
+  #navBar {
+    background-color: #dda52c;
+    height: auto;
+    width: 100vw; }
+  .imgIndex {
+    width: 100vw;
+    filter: grayscale(1); }
+  .imgIndex:hover {
+    filter: grayscale(0); } }

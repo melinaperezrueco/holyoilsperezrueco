@@ -1,0 +1,142 @@
+/*Productos*/
+
+.productGrids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "jabon" "rosa" "naranjo"
+    "micelar" "manteca" "balsamo";
+    height: 2000px;
+    width: $widthTotal;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.jabonPr {
+    display: flex;
+    grid-area: "jabon";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    font-family: $fuentePpal;
+}
+
+.rosaPr {
+    display: flex;
+    grid-area: "rosa";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: $fuentePpal;
+    font: 5px;
+}
+
+.naranjoPr {
+    display: flex;
+    grid-area: "naranjo";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: $fuentePpal;
+}
+
+.micelarPr {
+    display: flex;
+    grid-area: "micelar";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: $fuentePpal;
+}
+
+.mantecaPr {
+    display: flex;
+    grid-area: "manteca";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: $fuentePpal;
+}
+
+.balsamoPr {
+    display: flex;
+    grid-area: "balsamo";
+    width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-family: $fuentePpal;
+}
+
+.tituloProduct {
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: left;
+    text-align-last: center;
+    font-family: $fuenteSecond;;
+    margin: 10px 10px;
+}
+
+
+
+h3 {
+    padding-bottom: 15px;
+}
+
+/*MEDIA QUERIES PRODUCTOS*/
+
+@media screen and (max-width: 600px) {
+.productGrids {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "jabon"
+    "rosa"
+    "naranjo"
+    "micelar"
+    "manteca"
+    "balsamo";
+    height: 6000px;
+    width: $widthTotal;;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+}
+
+
+@media screen and (min-width: 600px) and (max-width:900px) {
+
+.productGrids {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr
+                        1fr 1fr 1fr;
+    grid-template-areas:
+    "jabon" "rosa"
+    "naranjo" "micelar"
+    "manteca" "balsamo";
+    height: 2500px;
+    width: $widthTotal;;
+    justify-content: center;
+    align-content: space-around;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+}

@@ -1,0 +1,64 @@
+
+
+/* Page Ingredientes */
+
+.ingredGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "karite" "almond" 
+                        "oil"  "coco";
+    height: 2000px;
+    width: $widthTotal;;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+}
+
+.karite{
+    grid-area: "karite";
+    display: flex;
+    flex-direction: column;
+}
+
+
+.almond{
+    grid-area: "almond";
+    display: flex;
+    flex-direction: column;
+}
+
+
+.oil{
+    grid-area: "oil";
+    display: flex;
+    flex-direction: column;
+}
+
+.coco {
+    grid-area: "coco";
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Media queries INGREDIENTES*/
+@media screen and (max-width: 600px) {
+
+.ingredGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 4000px;
+    width: $widthTotal;;
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 10px, 10px, 10px, 10px;
+}
+}

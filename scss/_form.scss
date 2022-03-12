@@ -1,0 +1,27 @@
+/*Formulario contacto*/
+
+.contactGrid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    width: auto;
+    flex-direction: column;
+    margin-top: 20px;
+    font-family: $fuentePpal;
+}
+
+.contactoForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: $widthTotal;;
+    font-family: $fuentePpal;
+    text-align: center;
+}
+
+.boton {
+    font-family: $fuentePpal;
+}
+
+
