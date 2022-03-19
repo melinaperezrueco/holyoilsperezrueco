@@ -57,9 +57,8 @@ nav ul {
   column-gap: 20px;
   row-gap: 40px; }
 
-.jabonPr {
+.prodGral, .jabonPr, .rosaPr, .naranjoPr, .micelarPr, .mantecaPr, .balsamoPr {
   display: flex;
-  grid-area: "jabon";
   width: 20vw;
   flex-direction: column;
   justify-content: center;
@@ -67,51 +66,23 @@ nav ul {
   align-content: center;
   font-family: "Noto Serif Display", serif; }
 
+.jabonPr {
+  grid-area: "jabon"; }
+
 .rosaPr {
-  display: flex;
-  grid-area: "rosa";
-  width: 20vw;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: "Noto Serif Display", serif;
-  font: 5px; }
+  grid-area: "rosa"; }
 
 .naranjoPr {
-  display: flex;
-  grid-area: "naranjo";
-  width: 20vw;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: "Noto Serif Display", serif; }
+  grid-area: "naranjo"; }
 
 .micelarPr {
-  display: flex;
-  grid-area: "micelar";
-  width: 20vw;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: "Noto Serif Display", serif; }
+  grid-area: "micelar"; }
 
 .mantecaPr {
-  display: flex;
-  grid-area: "manteca";
-  width: 20vw;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: "Noto Serif Display", serif; }
+  grid-area: "manteca"; }
 
 .balsamoPr {
-  display: flex;
-  grid-area: "balsamo";
-  width: 20vw;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  font-family: "Noto Serif Display", serif; }
+  grid-area: "balsamo"; }
 
 .tituloProduct {
   display: flex;
@@ -308,8 +279,37 @@ footer {
   font-family: "Noto Serif Display", serif;
   text-align: center; }
 
-.boton {
-  font-family: "Noto Serif Display", serif; }
+.botonEnv {
+  width: 80px;
+  height: 30px;
+  font-family: "Noto Serif Display", serif;
+  color: white;
+  background-color: #c29a4f;
+  margin-bottom: 20px; }
+
+.botonLimp {
+  width: 80px;
+  height: 30px;
+  font-family: "Noto Serif Display", serif;
+  color: #c29a4f;
+  background-color: #d8d5d5;
+  margin-bottom: 20px; }
+
+.botonPromo {
+  width: 80px;
+  height: 30px;
+  font-family: "Noto Serif Display", serif;
+  color: white;
+  background-color: #c29a4f;
+  margin-bottom: 20px; }
+
+.botonProd {
+  width: 80px;
+  height: 30px;
+  font-family: "Noto Serif Display", serif;
+  color: white;
+  background-color: #e1bc79;
+  margin-bottom: 20px; }
 
 * {
   margin: 0px;

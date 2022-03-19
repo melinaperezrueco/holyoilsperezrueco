@@ -1,0 +1,29 @@
+
+@mixin boton ($colorletra, $colorfondo){
+    width: 80px;
+    height: 30px;
+    font-family: $fuentePpal;
+    color: $colorletra;
+    background-color: $colorfondo ;
+    margin-bottom: 20px;
+
+}
+
+.botonEnv {
+    @include boton (white, rgb(194, 154, 79))
+    
+
+
+}
+
+.botonLimp {
+    @include boton (rgb(194, 154, 79), rgb(216, 213, 213))
+}
+
+.botonPromo {
+    @include boton (white, rgb(194, 154, 79))
+}
+
+.botonProd {
+    @include boton (white, rgb(225, 188, 121))
+}

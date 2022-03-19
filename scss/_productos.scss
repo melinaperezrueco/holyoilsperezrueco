@@ -16,9 +16,9 @@
     row-gap: 40px;
 }
 
-.jabonPr {
+
+.prodGral {
     display: flex;
-    grid-area: "jabon";
     width: 20vw;
     flex-direction: column;
     justify-content: center;
@@ -27,55 +27,35 @@
     font-family: $fuentePpal;
 }
 
+.jabonPr {
+    @extend .prodGral;
+    grid-area: "jabon";
+}
+
 .rosaPr {
-    display: flex;
+    @extend .prodGral;
     grid-area: "rosa";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: $fuentePpal;
-    font: 5px;
 }
 
 .naranjoPr {
-    display: flex;
+    @extend .prodGral;
     grid-area: "naranjo";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: $fuentePpal;
+
 }
 
 .micelarPr {
-    display: flex;
+    @extend .prodGral;
     grid-area: "micelar";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: $fuentePpal;
 }
 
 .mantecaPr {
-    display: flex;
+    @extend .prodGral;
     grid-area: "manteca";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: $fuentePpal;
 }
 
 .balsamoPr {
-    display: flex;
+    @extend .prodGral;
     grid-area: "balsamo";
-    width: 20vw;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    font-family: $fuentePpal;
 }
 
 .tituloProduct {
