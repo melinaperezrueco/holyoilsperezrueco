@@ -18,35 +18,8 @@
 
 
 
-/* Page Index*/
+/* Page Index */
 
-.imgIndex {
-    width: $widthTotal;;
-    filter: grayscale(0);
-
-    &:hover {
-    width: $widthTotal;;
-    filter: grayscale(1);
-    transition: 5s;
-}
-}
-
-.imgInstitucional {
-    width: $widthTotal;;
-    background-color: rgb(221, 165, 44);
-    margin-top: 0%;
-    margin-bottom: 0%;
-    grid-area: "imagen institucional";
-}
-
-main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "imagen institucional";
-    width: $widthTotal;;
-    flex-direction: column;
-}
 
 .tituloDes {
     display: flex;
@@ -73,6 +46,17 @@ h2 {
 }
 
 
+.pIndex {
+    font-family: $fuenteSecond;
+}
+
+
+h5 {
+    font-family: $fuentePpal;
+}
+
+
+
 /** MEDIAS QUERIES **/
 
 /*INDEX*/
@@ -87,27 +71,10 @@ h2 {
 /* Media Querie max 600px */
 
 @media screen and (max-width: 600px) {
-main {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "imagen institucional";
-    width: $widthTotal;;
-    color: rgb(221, 165, 44);
-}
 
 #navBar {
     background-color: rgb(221, 165, 44);
     height: auto;
     width: $widthTotal;;
-}
-
-.imgIndex {
-    width: $widthTotal;;
-    filter: grayscale(1);
-}
-
-.imgIndex:hover {
-    filter: grayscale(0);
 }
 }

@@ -71,13 +71,50 @@
 
 
 
-    <!--Main - imagen institucional-->
-    <main>
-        <div class="imgInstitucional">
-            <a href="./Pages/Productos.html"> <img class="imgIndex" src="./Images/fotoindex.jpeg" alt="campo floral">
-            </a>
+<!--Main carrusel-->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-    </main>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a id="carrusel" href="./Pages/Productos.html"><img src="../Repositorio/Images/jabonindex.png" class="d-block w-100" alt="Jabones puro vegetal">
+            <div class="carousel-caption d-none d-md-block">
+            <h5> Jabones puro vegetales </h5>
+            <p class="pIndex"> Probá nuestros fabulosos jabones hechos a mano.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a id="carrusel"  href="./Pages/promociones.html"> <img src="../Repositorio/Images/index02.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5> Aguas florales de rostro</h5>
+            <p class="pIndex"> Encontrá la tuya. </p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a id="carrusel"  href="./Pages/ingredientes.html"> <img src="../Repositorio/Images/index3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            <h5> Ingredientes naturales</h5>
+            <p class="pIndex" > Descubrí los ingredientes naturales de nuestros productos.</p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    
+
 
     <!--PIE DE PAGINA-->
     <footer>
