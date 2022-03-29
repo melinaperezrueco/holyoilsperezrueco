@@ -26,11 +26,12 @@ header {
 #navBar {
   width: 100vw;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 0; }
+
+#navbarNav {
   justify-content: space-evenly; }
 
 .container-fluid {
-  justify-content: space-evenly;
   align-items: center;
   font-size: 2vw;
   height: auto;
@@ -39,9 +40,11 @@ header {
 
 nav ul {
   text-decoration: none; }
-  nav ul li a {
-    text-decoration: none;
-    font-family: "Lato", sans-serif; }
+  nav ul li {
+    padding: 40px; }
+    nav ul li a {
+      text-decoration: none;
+      font-family: "Lato", sans-serif; }
 
 /*Productos*/
 .productGrids {
@@ -201,40 +204,58 @@ h3 {
   column-gap: 20px;
   row-gap: 40px; }
 
+.card-title {
+  font-family: "Lato", sans-serif;
+  margin: 10px 10px;
+  font-weight: bold;
+  text-align-last: center; }
+
 .karite {
   grid-area: "karite";
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
 
 .almond {
   grid-area: "almond";
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
 
 .oil {
   grid-area: "oil";
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
 
 .coco {
   grid-area: "coco";
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
 
 /* Media queries INGREDIENTES*/
 @media screen and (max-width: 600px) {
   .ingredGrid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "karite" "almond" "oil" "coco";
     height: 4000px;
     width: 100vw;
     justify-content: center;
-    align-content: space-evenly;
+    align-content: space-around;
     justify-items: center;
     column-gap: 20px;
-    row-gap: 40px;
-    padding: 10px, 10px, 10px, 10px; } }
+    row-gap: 40px; } }
 
 /*Footer*/
 footer {
@@ -252,15 +273,18 @@ footer {
 
 .bi-whatsapp {
   font-size: 30px;
-  color: #98ed19; }
+  color: #98ed19;
+  padding: 10px; }
 
 .bi-youtube {
   font-size: 30px;
-  color: red; }
+  color: red;
+  padding: 10px; }
 
 .bi-instagram {
   font-size: 30px;
-  color: #f255f2; }
+  color: #f255f2;
+  padding: 10px; }
 
 #carrusel {
   text-decoration: none; }
@@ -290,7 +314,8 @@ footer {
   font-family: "Noto Serif Display", serif;
   color: white;
   background-color: #c29a4f;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 5px; }
 
 .botonLimp {
   width: 80px;
@@ -298,7 +323,8 @@ footer {
   font-family: "Noto Serif Display", serif;
   color: #c29a4f;
   background-color: #d8d5d5;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 5px; }
 
 .botonPromo {
   width: 80px;
@@ -306,7 +332,8 @@ footer {
   font-family: "Noto Serif Display", serif;
   color: white;
   background-color: #c29a4f;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 5px; }
 
 .botonProd {
   width: 80px;
@@ -314,7 +341,8 @@ footer {
   font-family: "Noto Serif Display", serif;
   color: white;
   background-color: #e1bc79;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  border-radius: 5px; }
 
 * {
   margin: 0px;

@@ -9,7 +9,7 @@
     grid-template-areas: "karite" "almond" 
                         "oil"  "coco";
     height: 2000px;
-    width: $widthTotal;;
+    width: $widthTotal;
     justify-content: center;
     align-content: space-evenly;
     justify-items: center;
@@ -17,10 +17,20 @@
     row-gap: 40px;
 }
 
+.card-title{
+    font-family: $fuenteSecond;
+    margin: 10px 10px;
+    font-weight: bold;
+    text-align-last: center;
+}
+
 .karite{
     grid-area: "karite";
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 
 
@@ -28,6 +38,9 @@
     grid-area: "almond";
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 
 
@@ -35,14 +48,19 @@
     grid-area: "oil";
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
 
 .coco {
     grid-area: "coco";
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
 }
-
 
 
 /* Media queries INGREDIENTES*/
@@ -50,15 +68,19 @@
 
 .ingredGrid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "karite"
+    "almond"
+    "oil"
+    "coco";
     height: 4000px;
-    width: $widthTotal;;
+    width: $widthTotal;
     justify-content: center;
-    align-content: space-evenly;
+    align-content: space-around;
     justify-items: center;
     column-gap: 20px;
     row-gap: 40px;
-    padding: 10px, 10px, 10px, 10px;
 }
 }

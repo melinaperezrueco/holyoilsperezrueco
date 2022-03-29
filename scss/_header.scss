@@ -10,7 +10,7 @@ header {
     font-size: 30px;
     font-family: $fuentePpal;
     text-align: center;
-    width: $widthTotal;;
+    width: $widthTotal;
 
 
 
@@ -28,19 +28,21 @@ header {
     }
 
     #navBar {
-    width: $widthTotal;;
+    width: $widthTotal;
     padding-top: 0;
     padding-bottom: 0;
-    justify-content: space-evenly;
     
     }
 
+    #navbarNav {
+        justify-content: space-evenly;
+    }
+
     .container-fluid {
-    justify-content: space-evenly;
     align-items: center;
     font-size: 2vw;
     height: auto;
-    font-family: $fuenteSecond;;
+    font-family: $fuenteSecond;
     background-color: $colorSecond;
     }
 
@@ -49,7 +51,7 @@ header {
             text-decoration: none;
     
             li {
-
+                padding: 40px;
                 a {
         text-decoration: none;
         font-family: $fuenteSecond;
