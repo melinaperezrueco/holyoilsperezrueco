@@ -34,7 +34,7 @@ header {
 .container-fluid {
   align-items: center;
   font-size: 20px;
-  height: 80px;
+  height: auto;
   font-family: "Lato", sans-serif;
   background-color: #f5daa4; }
 
