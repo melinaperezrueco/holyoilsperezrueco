@@ -6,7 +6,7 @@
     grid-template-columns: 1fr  1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "azahar" "rosa";
-    height: 1500px;
+    height: auto;
     width: $widthTotal;;
     justify-content: center;
     align-content: space-around;
@@ -24,7 +24,6 @@
     text-align: center;
     align-content: center;
     font-family: $fuentePpal;
-
 }
 
 
@@ -37,9 +36,6 @@
     text-align: center;
     align-content: center;
     font-family: $fuentePpal;
-
-
-
 }
 
 
@@ -60,6 +56,10 @@
     margin: 10px 10px;
 }
 
+
+.tituloDes {
+    padding-bottom: 30px;
+}
 
  /* media queries PROMOCIONES */
 

@@ -33,8 +33,8 @@ header {
 
 .container-fluid {
   align-items: center;
-  font-size: 2vw;
-  height: auto;
+  font-size: 20px;
+  height: 80px;
   font-family: "Lato", sans-serif;
   background-color: #f5daa4; }
 
@@ -134,7 +134,7 @@ h3 {
   grid-template-columns: 1fr  1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "azahar" "rosa";
-  height: 1500px;
+  height: auto;
   width: 100vw;
   justify-content: center;
   align-content: space-around;
@@ -176,6 +176,9 @@ h3 {
   font-family: "Lato", sans-serif;
   margin: 10px 10px; }
 
+.tituloDes {
+  padding-bottom: 30px; }
+
 /* media queries PROMOCIONES */
 @media screen and (max-width: 600px) {
   .promoGrid {
@@ -194,8 +197,8 @@ h3 {
 .ingredGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "karite" "almond"  "oil"  "coco";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "karite" "almond"  "oil"  "coco" "vitamina" "cera";
   height: 2000px;
   width: 100vw;
   justify-content: center;
@@ -242,13 +245,29 @@ h3 {
   text-align: center;
   align-content: center; }
 
+.vitamina {
+  grid-area: "vitamina";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
+
+.cera {
+  grid-area: "cera";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-content: center; }
+
 /* Media queries INGREDIENTES*/
 @media screen and (max-width: 600px) {
   .ingredGrid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "karite" "almond" "oil" "coco";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "karite" "almond" "oil" "coco" "vitamina" "cera";
     height: 4000px;
     width: 100vw;
     justify-content: center;
@@ -262,9 +281,9 @@ footer {
   background-image: linear-gradient(to left, #c29a4f, #f5daa4);
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: #5c5b56;
   font-family: "Lato", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: bolder; }
 
@@ -274,17 +293,17 @@ footer {
 .bi-whatsapp {
   font-size: 30px;
   color: #98ed19;
-  padding: 10px; }
+  padding: 5px; }
 
 .bi-youtube {
   font-size: 30px;
   color: red;
-  padding: 10px; }
+  padding: 5px; }
 
 .bi-instagram {
   font-size: 30px;
   color: #f255f2;
-  padding: 10px; }
+  padding: 5px; }
 
 #carrusel {
   text-decoration: none; }

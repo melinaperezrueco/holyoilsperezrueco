@@ -5,9 +5,10 @@
 .ingredGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "karite" "almond" 
-                        "oil"  "coco";
+                        "oil"  "coco"
+                        "vitamina" "cera";
     height: 2000px;
     width: $widthTotal;
     justify-content: center;
@@ -62,6 +63,25 @@
     align-content: center;
 }
 
+.vitamina {
+    grid-area: "vitamina";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+
+.cera {
+    grid-area: "cera";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
 
 /* Media queries INGREDIENTES*/
 @media screen and (max-width: 600px) {
@@ -69,12 +89,14 @@
 .ingredGrid {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "karite"
     "almond"
     "oil"
-    "coco";
+    "coco"
+    "vitamina"
+    "cera";
     height: 4000px;
     width: $widthTotal;
     justify-content: center;
